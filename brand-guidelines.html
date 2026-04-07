@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brand Guidelines | Alpha-Tools</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .brand-section { margin-bottom: 50px; }
+        .color-grid { display: flex; gap: 20px; flex-wrap: wrap; }
+        .color-swatch { width: 120px; height: 120px; border-radius: 12px; display: flex; align-items: flex-end; padding: 10px; font-size: 0.8rem; color: white; font-weight: bold; text-shadow: 0 1px 2px rgba(0,0,0,0.5); }
+        .logo-preview { display: flex; align-items: center; gap: 20px; margin: 20px 0; padding: 30px; background: var(--bg-card); border-radius: var(--radius); }
+        .font-sample { font-size: 2rem; margin-bottom: 10px; }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-content">
+            <a href="index.html" class="logo">
+                <div class="logo-container">
+                    <img src="assets/logo-alpha-tools.png" alt="Alpha-Tools Logo" height="40">
+                </div>
+            </a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="brand-guidelines.html" style="color: #fff;">Brand</a>
+                <a href="affiliate.html">Affiliates</a>
+            </div>
+            <a href="index.html#tools" class="btn-primary">Get Started</a>
+        </div>
+    </nav>
+
+    <section class="section container">
+        <h1>Alpha-Tools Brand Guidelines</h1>
+        <p style="color: var(--text-muted); margin-bottom: 40px;">Official visual identity and usage rules.</p>
+
+        <!-- Logo Section -->
+        <div class="brand-section">
+            <h2>The Logo</h2>
+            <p>Our logo represents automation, connectivity, and efficiency. Always use the provided files. Do not distort or change colors.</p>
+            <div class="logo-preview">
+                <div class="logo-container" style="animation: none;"><img src="assets/logo-alpha-tools.png" style="width:80px; height:80px;"></div>
+                <div>
+                    <h3>Alpha-Tools</h3>
+                    <p style="color: var(--text-muted);">Professional Automation Tools</p>
+                </div>
+            </div>
+            <p><small>Minimum size: 32px height. Clear space: 10px margin.</small></p>
+        </div>
+
+        <!-- Colors Section -->
+        <div class="brand-section">
+            <h2>Color Palette</h2>
+            <div class="color-grid">
+                <div class="color-swatch" style="background: #3b82f6;">Primary<br>#3B82F6</div>
+                <div class="color-swatch" style="background: #8b5cf6;">Accent<br>#8B5CF6</div>
+                <div class="color-swatch" style="background: #06b6d4;">Cyan<br>#06B6D4</div>
+                <div class="color-swatch" style="background: #0a0e17; color: #fff;">Background<br>#0A0E17</div>
+                <div class="color-swatch" style="background: #151c2b; color: #fff;">Card<br>#151C2B</div>
+            </div>
+        </div>
+
+        <!-- Typography Section -->
+        <div class="brand-section">
+            <h2>Typography</h2>
+            <div style="background: var(--bg-card); padding: 30px; border-radius: var(--radius);">
+                <div class="font-sample" style="font-weight: 800;">Inter Bold (Headings)</div>
+                <p style="font-size: 1.2rem;">Inter is our primary font for maximum legibility and modern appeal.</p>
+                <p style="color: var(--text-muted);">Used for body text, descriptions, and UI elements.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-bottom" style="text-align:center;">
+            <p>&copy; 2026 Alpha-Tools. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
