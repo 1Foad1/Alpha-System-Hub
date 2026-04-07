@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing | Alpha-Tools</title>
+    <link rel="icon" href="assets/logo-alpha-tools.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; max-width: 900px; margin: 0 auto; }
+        .pricing-card { background: var(--bg-card); padding: 40px; border-radius: var(--radius); border: 1px solid var(--border); text-align: center; position: relative; }
+        .pricing-card.popular { border-color: var(--primary); box-shadow: 0 0 20px rgba(59,130,246,0.2); }
+        .popular-badge { position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: var(--primary); color: #fff; padding: 4px 12px; border-radius: 20px; font-size: 0.8rem; font-weight: 600; }
+        .price { font-size: 3rem; font-weight: 800; margin: 20px 0; color: #fff; }
+        .price span { font-size: 1rem; color: var(--text-muted); font-weight: 400; }
+        .features { list-style: none; margin: 30px 0; text-align: left; }
+        .features li { margin-bottom: 10px; color: var(--text-muted); display: flex; align-items: center; gap: 8px; }
+        .features li::before { content: "✓"; color: var(--primary); font-weight: bold; }
+        .pricing-cta { display: block; width: 100%; padding: 12px; background: var(--bg-elevated); color: #fff; text-decoration: none; border-radius: 8px; font-weight: 600; transition: 0.3s; border: 1px solid var(--border); }
+        .pricing-cta:hover { background: var(--primary); border-color: var(--primary); }
+        .pricing-card.popular .pricing-cta { background: var(--primary); border-color: var(--primary); }
+        .pricing-card.popular .pricing-cta:hover { background: var(--primary-dark); }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-content">
+            <a href="index.html" class="logo">
+                <img src="assets/logo-alpha-tools.png" alt="Alpha-Tools Logo" height="40">
+            </a>
+            <div class="nav-links">
+                <a href="index.html#tools">All Tools</a>
+                <a href="pricing.html" style="color:#fff;">Pricing</a>
+                <a href="index.html#faq">FAQ</a>
+                <a href="index.html#contact">Contact</a>
+            </div>
+            <div class="nav-actions">
+                <a href="index.html" class="btn-primary">Home</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="section container" style="text-align: center;">
+        <h1>Simple, Transparent Pricing</h1>
+        <p style="color:var(--text-muted); margin-bottom: 50px;">Start for free, upgrade when you need more power.</p>
+
+        <div class="pricing-grid">
+            <!-- Free Tier -->
+            <div class="pricing-card">
+                <h3>Starter</h3>
+                <div class="price">$0 <span>/ forever</span></div>
+                <ul class="features">
+                    <li>All 5 Core Tools</li>
+                    <li>Standard Support</li>
+                    <li>Offline Usage</li>
+                    <li>Personal Use License</li>
+                </ul>
+                <a href="index.html#tools" class="pricing-cta">Download Free</a>
+            </div>
+
+            <!-- Pro Tier -->
+            <div class="pricing-card popular">
+                <div class="popular-badge">Most Popular</div>
+                <h3>Pro Bundle</h3>
+                <div class="price">$49 <span>/ one-time</span></div>
+                <ul class="features">
+                    <li>All Core Tools</li>
+                    <li>Priority Support</li>
+                    <li>Commercial License</li>
+                    <li>Early Access to Updates</li>
+                    <li>Custom Branding Removal</li>
+                </ul>
+                <a href="#contact" class="pricing-cta">Buy Pro License</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Alpha-Tools. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
